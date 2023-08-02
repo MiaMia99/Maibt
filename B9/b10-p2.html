@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    <!--Bài 10: Viết chương trình tính giá điện.-->
+    let a = +prompt("Nhap so dien: ")
+    let giadien = 0
+    if (a > 1000) {
+        giadien = a * 2400
+    } else if (a > 500 && a < 1000) {
+        giadien = a * 1900
+    } else if (a < 500) {
+        giadien = a * 1300
+    }
+    alert(giadien)
+
+
+</script>
+</body>
+</html>

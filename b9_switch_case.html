@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ol>
+    <li>Cấu trúc switch_caser</li>
+</ol>
+<p>Khái niệm: switch-case là một cấu trúc điều kiện cho phép lựa chọn thực thi các
+    khối lệnh khác nhau dựa trên kết quả của việc so sánh
+    - switch-case so sánh giá trị của một biến với lần lượt từng giá trị một,
+    nếu có giá trị phù hợp với biến thì khối lệnh tương ứng sẽ được thực
+    thi
+    Cú pháp:
+    switch (variable) {
+    case condition1:
+    //code
+    break;
+    case condition2:
+    //code
+    break;
+    ...
+    ...
+    case conditionN:
+    //code
+    break;
+    default:
+    //code
+    break;
+    }
+
+    Trong đó:
+    variable là biến cần kiểm tra.
+    condition1, condition2,... conditionN là các điều kiện. Nếu điều kiện nào match thì code bên trong case đó sẽ được
+    thực thi.
+    default là block chứa đoạn code sẽ được thực thi nếu như không có case nào match (gần giống với else). Đây là block
+    optional, trong một switch-case có thể có hoặc không có block này.
+
+</p>
+<!--<script>-->
+
+<!--    let a = 10;-->
+<!--    switch (a) {-->
+<!--        case 10:-->
+<!--            alert("Học giỏi");-->
+<!--            break;-->
+<!--        default:-->
+<!--            alert("Cần cố gắng");-->
+<!--            break;-->
+<!--    }-->
+<!--</script>-->
+</li>
+<li> Toán tử 3 ngôi
+    <p> Khái niệm: Toán tử 3 ngôi trong Java hay còn gọi là toán tử điều kiện trong Java, là một toán tử được cấu tạo
+        bởi ba đối số gồm biểu thức điều kiện, kết quả khi điều kiện đúng và kết quả khi điều kiện sai. Kết quả ở đây có
+        thể là một giá trị được trả về, cũng có thể là một xử lý sẽ thực hiện sau đó tùy thuộc vào điều kiện chỉ định là
+        đúng hay sai.
+
+        Toán tử 3 ngôi trong Java cho phép chúng ta kiểm tra một điều kiện nào đó trong một dòng code duy nhất và trả về
+        giá trị, thay vì phải sử dụng nhiều câu lệnh if-else, giúp cho việc code đơn giản và thông minh hơn.</p>
+    <p><b> <i>Cú pháp: biến = Biểu thức logic ? Câu lệnh khi biểu thức trả về true : Câu lệnh khi biếu thức trả về
+        false;
+    </i></b></p>
+    <p>Ví dụ: trong số b,c tìm số lớn hơn
+        let a = 10
+        let b = 11
+        let x ; x = (a>b)?{x="a lớn hơn"}:{x="a nhỏ hơn"}
+    </p>
+</li>
+</body>
+</html>

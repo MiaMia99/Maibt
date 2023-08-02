@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+// 1. Hàm index off: bài 7
+<script>
+    // let mang = [23,34,5,6,-2,76,90,45,3,9];
+    // let input = +prompt("Nhap so: ")
+    // let flag= false
+    // for (let i =0; i< mang.length;i++){
+    //     if (input===mang[i]){
+    //         alert(`V nằm trong mảng ${i}`);
+    //         flag = true;
+    //     }
+    // }
+    // if(!flag){
+    //     alert ("V ko nằm trong mảng")
+    // }
+    //cách 2: dùng index off: tìm kiếm xem số đó có trong mảng hay ko. Nếu có thì trả về vị trí. còn ko thì trả về -1
+    let mang = [23,34,5,6,-2,76,90,45,3,9];
+    let input = +prompt("Nhap so: ")
+    let search = mang.indexOf(input);
+    if (search !== - 1){
+        alert(`V có trong mảng  và nằm ở vị trí ${search}`)
+    } else {
+        alert("V ko thuộc mng")
+    }
+    //console.log(mang.indexOf(input))
+    //2. Hàm splice: dùngdđể thêm hoặc xóa, thay thế phần tử vào mảng
+    //let mang = [23,34,5,6,-2,76,90,45,3,9];//( muốn xóa số 34)
+    //mang.splice(1,1);//xóa vị trí 1 của mảng và chỉ xóa 1 phần tử (vị trí bắt đầu muốn xóa và số lượng phần tử muốn xóa)
+    //console.log(mang)
+// Mảng 2 chiều
+//     let arr =[[1,2,3]
+//         , [4,56,7]]
+//     console.log(arr[0][1])
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = 0; j <arr.length ; j++) {
+//             console.log(arr[i][j])
+//         }
+//
+//     }
+    //( Hàng trước cột sau)
+</script>
+</body>
+</html>

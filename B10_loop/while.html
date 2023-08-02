@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // let i=0;
+  // while(i<20){
+  //   console.log(i)
+  // }
+  /* While(điều kiện){Khối lệnh thực thi}*/
+  /* do{khối lệnh thực thi} while {Điều kiện)
+   */
+  //bài 8
+  let so= Number.parseInt(Math.random()*10);
+  console.log(so);
+  let soNhap
+  let count = 0;
+  do{
+      soNhap = +prompt("Doan di: ");
+      count++;
+      if(soNhap=== so){
+          alert("correct")
+      }
+      if(count=== 3){
+          alert("sad")
+          break;
+      }
+  }while( so!==soNhap)
+
+</script>
+</body>
+</html>

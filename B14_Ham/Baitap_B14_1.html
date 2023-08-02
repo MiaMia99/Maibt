@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // <!--  1. Viết hàm nhập vào một mảng, trả về tổng các phần tử trong mảng.Sử dụng hàm.-->
+    // let a = prompt("Nhap mang: ")
+    // let arr = a.split('')
+    // function tinhTong(arr) {
+    //     let Tong = 0;
+    //     for (let i = 0; i < arr.length; i++) {
+    //         Tong += (+arr[i]);
+    //     return(Tong)
+    //     }
+    //
+    // }
+    //
+    // tinhTong(arr)
+
+    // <!--  2. Viết hàm nhập vào một mảng, trả về tổng các phần tử lẻ trong mảng. Sử dụng hàm.-->
+    //let a = prompt("Nhap mang: ")
+    //let arr = a.split('')
+
+
+    // function tinhTong2(arr) {
+    //     let tong = 0
+    //     for (let i = 0; i < arr.length; i++) {
+    //         if (arr[i] % 2 !== 0) {
+    //             tong += +arr[i];
+    //         }
+    //
+    //     }
+    //     return(tong)
+    // }
+    // tinhTong2(arr)
+
+    // <!--  3. Viết hàm nhập vào một mảng, trả về số lượng các phần tử lẻ trong mảng. Sử dụng hàm.-->
+
+    // function demSoLuong(arr) {
+    //     let count = 0
+    //     for (let i = 0; i < arr.length; i++) {
+    //         if (arr[i] % 2 !== 0) {
+    //             count++;
+    //         }
+    //     }
+    //     return count;
+    // }
+
+    //alert(demSoLuong(arr))
+
+    // <!--  4. Sử dụng hàm ở ý 2 và 3. Tính trung bình các phần tử lẻ trong mảng.-->
+    // function tinhTrungBinhLe(arr) {
+    //     let tbl = tinhTong2(arr) / demSoLuong(arr);
+    //     return tbl
+    // }
+    //
+    // alert(tinhTrungBinhLe(arr))
+
+    // <!--  5. Viết hàm nhận vào 1 mảng và một số x, tìm x trong mảng. Nếu có trả về vị trí, không thì trả về -1. Sử dụng hàm.-->
+
+
+    // let mang = prompt("Nhap so: ");
+    // let mang2 = mang.split('')
+    // let x = +prompt("Nhap so: ")
+    //
+    // function timX(mang2, x) {
+    //     let viTri = mang2.indexOf(x);
+    //
+    // return vitri
+    // }
+    //
+    // timX(mang2)
+    // cách 2 :
+    function timVitri(mang,x) {
+        for (let i = 0; i < mang ; i++) {
+            if (mang[i]===x){
+                return i
+            }
+
+        }
+        return -1
+    }
+    // <!--  6. Viết hàm nhận vào 1 mảng. Sử dụng hàm.-->
+    // let arr = [1,2,3,4,5];
+    // function hienThiHam(){
+    //     console.log(arr) }
+    // hienThiHam()
+
+    // <!--  7. Sử dụng hàm ở ý 5 và 6. Viết hàm nhận vào một mảng, hiển thị vị trí của các phần tử có giá trị bằng max trong mảng.-->
+    function hienThivitri(arr) {
+        let max = tim
+        for (let i = 0; i < arr1.length; i++) { if (arr1[i] > max){
+            let count = i;
+            count++;
+            max = arr1[i];
+
+        }
+        }
+        console.log(count)
+
+    }
+    hienThivitri()
+    // <!--  8. Viết hàm nhận vào một số, nếu là số nguyên tố, trả về true, không thì false. Sử dụng hàm.-->
+    let a =+ prompt("nhap so:")
+    function check(a) {
+        if (a % 1 === 0 & a % a ){ console.log("là số nguyên tố")}
+        
+    }
+
+    // <!--  9. Sử dụng hàm ở 8. Viết hàm nhận 1 mảng, trả về số lượng số nguyên tố trong mảng. Sử dụng hàm.-->
+    // <!--  10. Sử dụng hàm ở 8. Viết hàm nhận vào a và b. In ra số nguyên tố từ a đến b. Sử dụng hàm.-->
+
+</script>
+</body>
+</html>

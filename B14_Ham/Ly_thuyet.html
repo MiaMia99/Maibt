@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Function là 1 tập lệnh để được thực hiện 1 chức năng nào đấy
+    //1. Khai báo hàm
+    //function helloC06(){ // function là chứ năng khai báo hàm. + tên ( hellloC06)
+    //alert("chào C06") // hàm tự xây dựng do người dùng tự định nghĩa
+    //}
+    // Thực hiện gọi hàm
+    //helloC06();
+    // Lưu ý cách đjăt tên hàm: là động từ và mô tả được chức năng của hàm
+    //2. các loại hàm
+
+    // Phân biệt được tham số và đối số
+    //function f(x) {
+    //alet(x*x) //đây là hàm
+
+    //}
+    //f(6)// x: Đây là Tham số của hàm ( sau tên hàm khi khái báo): Đại diện cho các đối số. Tham số nhận ược tất cả các kiểu dữ liệu
+    // 6 là đối số của hàm( sau lời gọi hàm) và dùng để giá trị truyền vào hàm
+    // Bài tập: Tạo 1 hàm nhận vào 1 tên và hiển thị lời chào tên đó lên hộp thoại
+    //let x = +prompt("Nhap ten: ")
+    //     function hienthi(x) {
+    //         alert("Chào" + x)
+    // }
+    // hienthi("Hoa")
+
+
+
+    //     function hienthi(x,y,z) {
+    //         alert(`Chào ${x} và ${y} và ${z} `)
+    // }
+    // hienthi("Hoa","k","l")
+    //3. Cách trả về dữ liệu của hàm
+    //viết 1 hàm nhận vào 2 số a và b. và trar về trug bnh cộng 2 số đó
+    // function getAvg (a,b){
+    //     let c= (a+b)/2
+    //     return c;
+    //     alert('Chào')//lệnh này sẽ ko thực hiện vì có return. Return có chức năng dừng hàm lập tức
+    // }
+     // alert(tbc)
+    //4, Phạm vi của biến
+    // Biến cục bộ: biến nằm trong khối hoặc hàm. và chỉ hoạt động trong khối hoặc hàm đó
+    // Biến toàn cục: biến nằm ngoài khối hoặc hàm. Phạm vi dử dụng: được s dụng từ lc khai báo
+    function tinhTong(a,b,c) {
+        return a+b+c
+    }
+    function tinhTB(a,b,c){
+        let tong = tinhTong(a,b,c)
+        let TB= tong/3
+        return TB
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Tính tổng mảng 2 chiều
+    // let arr = [
+    //     [1, 2, 4, 4],
+    //     [6, 5, 7, 8],
+    //     [2, 4, 5, 6],
+    //     [2, 3, 6, 9]
+    // ];
+    // let tong1=0;
+    // for (let i = 0; i < arr.length; i++) {
+    //    // tong1 += arr[i];
+    //   for ( j = 0; j < arr[i].length; j++) {
+    //     tong1 += arr[i][j];
+    //   }
+    // }
+    // console.log(tong1)
+    // 2. Tìm phần tử lớn nhất trong mảng 2 chiều
+    // let max = arr[0][0]
+    // for (let i = 0; i < arr.length; i++) {
+    //     for (j = 0; j < arr[i].length; j++) {
+    //         if(max < arr[i][j]){
+    //             max = arr[i][j]
+    //         }
+    //
+    //     }
+    // }
+    // console.log(max)
+    //3.1 Tính tổng các hàng
+
+    // for (let i = 0; i < arr.length; i++) {
+    //     let tong = 0;
+    //     for (let j = 0; j < arr[i].length; j++) {
+    //         tong += arr[i][j]
+    //     }
+    //     console.log(tong);
+    // }
+
+    //3. Tìm phần tử lớn nhất trong các hàng
+    // for (let i = 0; i < arr.length; i++) {
+    //     let max = arr[i][0];
+    //     for (let j = 0; j < arr[i].length; j++) {
+    //         if(max < arr[i][j]){
+    //         max = arr[i][j]}
+    //     }
+    //     console.log(max)
+    //     }
+
+    //4.  Tìm phần tử lớn nhất trong cột
+
+    let arr = [
+            [1, 2, 4, 4],
+            [6, 5, 7, 8],
+            [2, 4, 5, 6],
+            [2, 3, 6, 9]
+        ];
+    for (let j = 0; j < arr.length; j++) {
+        let max = arr[0][j];
+        for (let i = 0; i < arr[j].length; i++) {
+            if (max < arr[i][j]) {
+                max = arr[i][j]
+            }
+        }
+        console.log(max)
+    }
+
+
+</script>
+</body>
+</html>

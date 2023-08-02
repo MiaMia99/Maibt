@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // -Bài 10: tính thuế thu nhập cá nhân
+    let a = +prompt("Nhap so dien: ")
+    let thueCanhan = 0
+    if (a > 1000) {
+        thueCanhan = a * (15/100)
+    } else if (a > 500 && a < 1000) {
+        thueCanhan = a * (10/100)
+    } else if (a < 500) {
+        thueCanhan = a *(100/100)
+    }
+    alert(thueCanhan)
+</script>
+</body>
+</html>
