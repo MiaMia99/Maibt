@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài 1: Viết hàm tính bình phương của một số bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+    function tinhBinhPhuong(a) {
+        let b = a * a;
+        alert(b)
+
+    }
+
+    // tinhBinhPhuong(4)
+    //         Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được
+    function tinh(a) {
+        let S = a * a
+        let c = 3.14 * 2 * a
+        alert(`chu vi: ${c}  và diện tích ${S} `)
+
+    }
+
+    //tinh(3)
+
+    //
+    // Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+    function tinhGiaiThua(n) {
+        for (let i = 1; i <= n; i++) {
+            i
+
+            alert(a)
+        }
+
+    }
+
+    //inhGiaiThua(4)
+    //
+    //         Bài 4: Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không. Nếu là ký tự số hàm trả về true, ngược lại trả về false.
+    function kiemTra(a) {
+        let number = Number(a);
+        if (number === NaN) {
+            alert('true')
+        } else {
+            alert('false')
+        }
+    }
+
+    //kiemTra(123)
+
+    //         Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.
+    function timMin(arr) {
+        let min = arr[i];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+
+        }
+        alert(arr[i])
+    }
+
+    //timMin([3,4,5])
+    //
+    //         Bài 6: Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không. Nếu là nguyên dương trả về true, ngược lại trả về false.
+    function kiemTraSo(a) {
+        if (a > 0 && a !== NaN) {
+            alert('true')
+        } else {
+            alert('false')
+        }
+
+
+    }
+
+    //kiemTraSo('mai')
+    //         Bài 7: Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.
+    function doiVitri(a, b) {
+        let temp = a;
+        a = b;
+        b = temp;
+        return `a=${a} b=${b}`
+    }
+
+    //console.log(doiVitri(1,2))
+    //cách2
+    //         Bài 8: Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.
+    function daoHam(arr) {
+        let temp;
+        for (let i = 0; i < arr.length/2; i++) {
+            temp = arr[i];
+            arr[i] = arr[arr.length - i - 1];
+            arr[arr.length - i - 1] = temp
+
+        }
+        return(arr);
+    }
+
+    //daoHam([1, 2, 3, 4])
+    console.log(arr)
+
+   // function daoHam(arr) {
+        let arr = [1,2,3,4]
+        let temp;
+        for (let i = 0; i < arr.length / 2; i++) {
+            temp = arr[i];
+            arr[i] = arr[arr.length - i - 1];
+            arr[arr.length - i - 1] = temp;
+        }
+        alert (arr)
+    }
+
+    //daoHam([1, 2, 3, 4]);
+    //console.log(arr);
+    //         Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không. Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.
+function timVitri(mang, x) {
+    for (let i = 0; i < mang.length; i++) {
+        if(mang[i]=x){
+            alert (i)
+        }
+        else {
+            alert (-1)
+        }
+
+    }
+
+}
+</script>
+</body>
+</html>
