@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    function find(mang) {
+        let max = mang[0];
+        let indexMax = 0;
+        for (let i = 0; i < mang.length; i++) {
+            if (mang[i] > max) {
+                max = mang[i];
+                indexMax = i;
+            }
+        }
+        mang.splice(indexMax, 1)
+
+        max = mang[0];
+        indexMax = 0;
+        for (let i = 0; i < mang.length; i++) {
+            if (mang[i] > max) {
+                max = mang[i];
+                indexMax = i;
+
+            }
+        }
+        mang.splice(indexMax, 1)
+        max = mang[0];
+        indexMax = 0;
+        for (let i = 0; i < mang.length; i++) {
+            if (mang[i] > max) {
+                max = mang[i];
+                indexMax = i;
+
+            }
+        }
+        mang.splice(indexMax, 1)
+        console.log(max)
+    }
+
+    let mang = [2, 3, 46, 5, 23]
+    find(mang)
+
+</script>
+</body>
+</html>
